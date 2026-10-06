@@ -1,6 +1,6 @@
-# 03 · One shape carries the story
+# 02 · One shape carries the story
 
-**Sketch:** `match` · **Clip:** `Clip-03-match`
+**Sketch:** `match` · **Clip:** `Clip-02-match`
 
 ## What it is
 The full stop of «یک پیام بفرست.» winds up, flies and opens into the reply bubble; the bubble then shrinks into the full stop of the next line. The eye follows one object the whole time, so there is nothing to cut.

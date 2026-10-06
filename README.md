@@ -19,12 +19,10 @@ Every sketch is plain JavaScript, a pure function of time, so the same code runs
 
 | | |
 |---|---|
-| <img src="media/02-oner.gif" alt="One camera, no cuts" width="100%"><br>**02 · One camera, no cuts** · یک دوربین، بدون کات<br>Scenes on one strip, right to left; whip pans with motion blur and parallax. | <img src="media/03-match.gif" alt="One shape carries the story" width="100%"><br>**03 · One shape carries the story** · یک شکل، کلِ داستان<br>The full stop grows into the reply bubble, then into the next full stop. |
-| <img src="media/04-ui.gif" alt="The real UI, directed" width="100%"><br>**04 · The real UI, directed** · رابطِ واقعی، کارگردانی‌شده<br>RTL interface in 3D, a cursor on arcs, a focus pull. | <img src="media/05-beat.gif" alt="Cut on the beat" width="100%"><br>**05 · Cut on the beat** · کات روی ضرب<br>Music first; a hard cut on every beat, punch-ins, inverted frames. |
-| <img src="media/06-boil.gif" alt="On twos, with line boil" width="100%"><br>**06 · On twos, with line boil** · دوفریمی، با خطِ لرزان<br>Drawings hold two frames, lines wobble; the camera stays smooth. | <img src="media/07-cutout.gif" alt="Paper cut-out letters" width="100%"><br>**07 · Paper cut-out letters** · حروفِ کاغذی<br>Each joined letter group is a rigid paper piece, one light, matching shadows. |
-| <img src="media/08-nuqta.gif" alt="Dots last" width="100%"><br>**08 · Dots last** · نقطه‌ها آخر<br>Letter bodies first, right to left; then the dots drop in. | <img src="media/09-kashida.gif" alt="Kashida, not letter-spacing" width="100%"><br>**09 · Kashida, not letter-spacing** · کشیده، نه فاصله<br>Stretch the joining stroke, measured in calligraphic dots. |
-
-The numbering follows the original direction board (01 and 10 were left out).
+| <img src="media/01-oner.gif" alt="One camera, no cuts" width="100%"><br>**01 · One camera, no cuts** · یک دوربین، بدون کات<br>Scenes on one strip, right to left; whip pans with motion blur and parallax. | <img src="media/02-match.gif" alt="One shape carries the story" width="100%"><br>**02 · One shape carries the story** · یک شکل، کلِ داستان<br>The full stop grows into the reply bubble, then into the next full stop. |
+| <img src="media/03-ui.gif" alt="The real UI, directed" width="100%"><br>**03 · The real UI, directed** · رابطِ واقعی، کارگردانی‌شده<br>RTL interface in 3D, a cursor on arcs, a focus pull. | <img src="media/04-beat.gif" alt="Cut on the beat" width="100%"><br>**04 · Cut on the beat** · کات روی ضرب<br>Music first; a hard cut on every beat, punch-ins, inverted frames. |
+| <img src="media/05-boil.gif" alt="On twos, with line boil" width="100%"><br>**05 · On twos, with line boil** · دوفریمی، با خطِ لرزان<br>Drawings hold two frames, lines wobble; the camera stays smooth. | <img src="media/06-cutout.gif" alt="Paper cut-out letters" width="100%"><br>**06 · Paper cut-out letters** · حروفِ کاغذی<br>Each joined letter group is a rigid paper piece, one light, matching shadows. |
+| <img src="media/07-nuqta.gif" alt="Dots last" width="100%"><br>**07 · Dots last** · نقطه‌ها آخر<br>Letter bodies first, right to left; then the dots drop in. | <img src="media/08-kashida.gif" alt="Kashida, not letter-spacing" width="100%"><br>**08 · Kashida, not letter-spacing** · کشیده، نه فاصله<br>Stretch the joining stroke, measured in calligraphic dots. |
 
 ## What's inside
 
@@ -35,7 +33,7 @@ references/
   anti-slideshow.md           curves, springs, staggers, holds, motion blur, rhythm (with numbers and sources)
   persian-typography.md       joining, masks, bidi, characters, kashida, fonts, a review checklist
   persian-copy.md             natural Persian for motion, common machine-copy mistakes
-  techniques/02…09            one file per technique: recipe, values, Persian notes, the X posts behind it
+  techniques/01…08            one file per technique: recipe, values, Persian notes, the X posts behind it
 scripts/
   shape_persian.py            HarfBuzz shaping → SVG outlines split into letter bodies, dots and joined groups
   split_fa.js                 split a word into letters that keep their joined forms (zero-width joiners)

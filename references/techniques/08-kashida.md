@@ -1,6 +1,6 @@
-# 09 · Kashida, not letter-spacing
+# 08 · Kashida, not letter-spacing
 
-**Sketch:** `kashida` · **Clip:** `Clip-09-kashida`
+**Sketch:** `kashida` · **Clip:** `Clip-08-kashida`
 
 ## What it is
 Persian adds rhythm and emphasis by stretching the joining stroke (kashida), not by spacing letters apart. The stroke between م and س in «هرمس» is pulled out like a pen stroke, measured in rhombic dots (the calligrapher's unit), then springs back.

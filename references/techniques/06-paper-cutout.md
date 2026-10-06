@@ -1,6 +1,6 @@
-# 07 · Paper cut-out letters
+# 06 · Paper cut-out letters
 
-**Sketch:** `cutout` · **Clip:** `Clip-07-cutout`
+**Sketch:** `cutout` · **Clip:** `Clip-06-cutout`
 
 ## What it is
 Each connected letter group of «پیام‌رسان» is a rigid paper piece, pinned at the baseline and placed by hand at 8 poses a second. One light, so every shadow agrees; a lifted piece casts a longer, softer one.

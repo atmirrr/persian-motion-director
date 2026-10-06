@@ -691,14 +691,13 @@ const cutout = () => {
 
 export const SKETCHES = { oner, match, ui, beat, boil, cutout, nuqta, kashida };
 
-/* Board numbering is kept (02 to 09) so the clips match the direction board. */
 export const SKETCH_INFO = [
-  { id: 'oner', n: 2, title: 'One camera, no cuts', fa: 'یک دوربین، بدون کات' },
-  { id: 'match', n: 3, title: 'One shape carries the story', fa: 'یک شکل، کل داستان' },
-  { id: 'ui', n: 4, title: 'The real UI, directed', fa: 'رابط واقعی، کارگردانی‌شده' },
-  { id: 'beat', n: 5, title: 'Cut on the beat', fa: 'کات روی ضرب' },
-  { id: 'boil', n: 6, title: 'On twos, with line boil', fa: 'دوفریمی، با خط لرزان' },
-  { id: 'cutout', n: 7, title: 'Paper cut-out letters', fa: 'حروف کاغذی' },
-  { id: 'nuqta', n: 8, title: 'Dots last', fa: 'نقطه‌ها آخر' },
-  { id: 'kashida', n: 9, title: 'Kashida, not letter-spacing', fa: 'کشیده، نه فاصله' },
+  { id: 'oner', n: 1, title: 'One camera, no cuts', fa: 'یک دوربین، بدون کات' },
+  { id: 'match', n: 2, title: 'One shape carries the story', fa: 'یک شکل، کل داستان' },
+  { id: 'ui', n: 3, title: 'The real UI, directed', fa: 'رابط واقعی، کارگردانی‌شده' },
+  { id: 'beat', n: 4, title: 'Cut on the beat', fa: 'کات روی ضرب' },
+  { id: 'boil', n: 5, title: 'On twos, with line boil', fa: 'دوفریمی، با خط لرزان' },
+  { id: 'cutout', n: 6, title: 'Paper cut-out letters', fa: 'حروف کاغذی' },
+  { id: 'nuqta', n: 7, title: 'Dots last', fa: 'نقطه‌ها آخر' },
+  { id: 'kashida', n: 8, title: 'Kashida, not letter-spacing', fa: 'کشیده، نه فاصله' },
 ];

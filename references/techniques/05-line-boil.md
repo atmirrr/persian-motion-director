@@ -1,6 +1,6 @@
-# 06 · On twos, with line boil
+# 05 · On twos, with line boil
 
-**Sketch:** `boil` · **Clip:** `Clip-06-boil`
+**Sketch:** `boil` · **Clip:** `Clip-05-boil`
 
 ## What it is
 The drawing holds each pose for two frames (12 drawings a second at 24 fps) and its lines re-wobble with every new drawing, like redrawn cels, while the camera keeps moving smoothly every frame.

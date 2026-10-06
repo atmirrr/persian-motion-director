@@ -1,6 +1,6 @@
-# 05 · Cut on the beat
+# 04 · Cut on the beat
 
-**Sketch:** `beat` · **Clip:** `Clip-05-beat` (with music, synced)
+**Sketch:** `beat` · **Clip:** `Clip-04-beat` (with music, synced)
 
 ## What it is
 Music first. Every beat is a hard cut to a new composition: huge, tiny, bleeding off the frame, stacked, inverted. Each cut lands slightly punched in and settles; small accents hit the off-beats. No crossfades.

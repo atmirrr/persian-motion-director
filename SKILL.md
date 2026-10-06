@@ -53,14 +53,14 @@ Live code for each is in `assets/sketches/sketches.js` (plain JS, a pure functio
 
 | # | Technique | Use it for | Sketch id |
 |---|---|---|---|
-| 02 | One camera, no cuts | The spine of a film: scenes on one strip, whip pans with motion blur and parallax | `oner` |
-| 03 | One shape carries the story | Transitions: a full stop grows into a chat bubble, then into the next full stop | `match` |
-| 04 | The real UI, directed | Product beats: real interface in 3D, cursor on arcs, focus pulls | `ui` |
-| 05 | Cut on the beat | Feature runs and kinetic type: hard cuts on every beat, punch-ins, inverted frames | `beat` |
-| 06 | On twos, with line boil | A hand-drawn layer over clean UI: drawings hold 2 frames, lines wobble 12×/s | `boil` |
-| 07 | Paper cut-out letters | Warm title cards: each joined letter group is a rigid paper piece | `cutout` |
-| 08 | Dots last | Wordmarks and reveals: letter bodies first, then the dots drop in | `nuqta` |
-| 09 | Kashida, not letter-spacing | Emphasis on a held note: stretch the joining stroke, measured in calligraphic dots | `kashida` |
+| 01 | One camera, no cuts | The spine of a film: scenes on one strip, whip pans with motion blur and parallax | `oner` |
+| 02 | One shape carries the story | Transitions: a full stop grows into a chat bubble, then into the next full stop | `match` |
+| 03 | The real UI, directed | Product beats: real interface in 3D, cursor on arcs, focus pulls | `ui` |
+| 04 | Cut on the beat | Feature runs and kinetic type: hard cuts on every beat, punch-ins, inverted frames | `beat` |
+| 05 | On twos, with line boil | A hand-drawn layer over clean UI: drawings hold 2 frames, lines wobble 12×/s | `boil` |
+| 06 | Paper cut-out letters | Warm title cards: each joined letter group is a rigid paper piece | `cutout` |
+| 07 | Dots last | Wordmarks and reveals: letter bodies first, then the dots drop in | `nuqta` |
+| 08 | Kashida, not letter-spacing | Emphasis on a held note: stretch the joining stroke, measured in calligraphic dots | `kashida` |
 
 Pick by the brief, not by novelty: one or two signature techniques used consistently read as a system; all eight at once read as a reel.
 

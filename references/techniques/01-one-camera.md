@@ -1,6 +1,6 @@
-# 02 · One camera, no cuts
+# 01 · One camera, no cuts
 
-**Sketch:** `oner` in `assets/sketches/sketches.js` · **Clip:** `Clip-02-oner`
+**Sketch:** `oner` in `assets/sketches/sketches.js` · **Clip:** `Clip-01-oner`
 
 ## What it is
 All scenes sit on one long strip, laid out right to left like the script reads. Every transition is the camera travelling: a small wind-up, a fast whip with motion blur, a settle. Background layers move slower than the foreground, so the frame has depth.

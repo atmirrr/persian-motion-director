@@ -1,6 +1,6 @@
-# 08 · Dots last
+# 07 · Dots last
 
-**Sketch:** `nuqta` · **Clip:** `Clip-08-nuqta`
+**Sketch:** `nuqta` · **Clip:** `Clip-07-nuqta`
 
 ## What it is
 The words arrive as bare letter shapes, right to left; then the dots fall in one by one and land with a small squash: ب gets one, ی two, ش three. The script was first written without dots, which were added later to tell letters apart, so this replays the alphabet's own history.

@@ -9,14 +9,14 @@ export const FPS = 60;
 
 /* Each clip is a whole number of sketch loops, so it loops cleanly on X. */
 const CLIPS: {id: SketchId; n: number; loopSec: number; loops: number; musicFromSec?: number}[] = [
-	{id: 'oner', n: 2, loopSec: 6.9, loops: 2},
-	{id: 'match', n: 3, loopSec: 6.2, loops: 2},
-	{id: 'ui', n: 4, loopSec: 6.4, loops: 2},
-	{id: 'beat', n: 5, loopSec: 4.0, loops: 3, musicFromSec: 16},
-	{id: 'boil', n: 6, loopSec: 5.0, loops: 2},
-	{id: 'cutout', n: 7, loopSec: 5.6, loops: 2},
-	{id: 'nuqta', n: 8, loopSec: 5.2, loops: 2},
-	{id: 'kashida', n: 9, loopSec: 4.8, loops: 2},
+	{id: 'oner', n: 1, loopSec: 6.9, loops: 2},
+	{id: 'match', n: 2, loopSec: 6.2, loops: 2},
+	{id: 'ui', n: 3, loopSec: 6.4, loops: 2},
+	{id: 'beat', n: 4, loopSec: 4.0, loops: 3, musicFromSec: 16},
+	{id: 'boil', n: 5, loopSec: 5.0, loops: 2},
+	{id: 'cutout', n: 6, loopSec: 5.6, loops: 2},
+	{id: 'nuqta', n: 7, loopSec: 5.2, loops: 2},
+	{id: 'kashida', n: 8, loopSec: 4.8, loops: 2},
 ];
 
 export const RemotionRoot: React.FC = () => (
