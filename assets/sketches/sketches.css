@@ -1,0 +1,55 @@
+/* Stage theme. Override these on .pmd-stage (or any parent) to restyle every sketch.
+   Defaults are the Hermes palette the examples were made for. */
+@font-face { font-family: "Vazirmatn"; src: url("./fonts/Vazirmatn-VF.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+.pmd-stage {
+  --ink: #0000F2;
+  --paper: #F2F2F2;
+  --spot: #F2F200;
+  --black: #0B0B0C;
+  --fa: "Vazirmatn", Tahoma, sans-serif;
+  position: relative; overflow: hidden; background: var(--paper);
+  container-type: inline-size;
+}
+.pmd-stage > svg, .pmd-stage > canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.pmd-stage [hidden] { display: none !important; }
+.svg-fa { font-family: var(--fa); }
+.svg-mono { font-family: ui-monospace, Menlo, monospace; letter-spacing: .06em; }
+.fa-wrap { position: absolute; inset: 0; display: grid; place-items: center; }
+.fa-line { font-family: var(--fa); margin: 0; font-size: clamp(26px, 7.6cqw, 120px); color: var(--ink); line-height: 1.9; white-space: nowrap; }
+.beat-root { position: absolute; inset: 0; background: var(--paper); color: var(--ink); overflow: hidden; }
+.beat-root.dark { background: var(--ink); color: var(--paper); }
+.beat-fr { position: absolute; inset: 0; display: grid; place-items: center; transform-origin: 50% 50%; }
+.beat-fr p { margin: 0; font-family: var(--fa); line-height: 1.25; text-align: center; white-space: nowrap; font-weight: 500; }
+.beat-tr { place-items: start end; padding: 6cqw 7cqw; }
+.beat-bl { place-items: end start; padding: 6cqw 7cqw; }
+.beat-bleed p { transform: translateX(-18%); line-height: 1; }
+.beat-stack p { line-height: 1.05; font-weight: 800; }
+.beat-stack p { -webkit-text-stroke: 0; }
+.beat-acc { position: absolute; left: 0; right: 0; bottom: 18%; height: 1.1cqw; background: var(--spot); transform-origin: right; }
+.beat-ticks { position: absolute; left: 50%; bottom: 4cqw; transform: translateX(-50%); display: flex; gap: 1.2cqw; direction: rtl; }
+.beat-ticks i { width: 1.1cqw; height: 1.1cqw; border-radius: 50%; border: 0.18cqw solid currentColor; opacity: .5; }
+.beat-ticks i.on { background: var(--spot); border-color: var(--spot); opacity: 1; }
+.ui-root { position: absolute; inset: 0; background: var(--paper); perspective: 1400px; overflow: hidden; font-family: var(--fa); }
+.ui-scene { position: absolute; inset: 0; transform-style: preserve-3d; }
+.ui-win, .ui-log { position: absolute; border-radius: 1.4cqw; background: #fff; box-shadow: 0 2cqw 5cqw rgba(0,0,0,.14), 0 0 0 1px rgba(0,0,0,.06); color: #161616; }
+.ui-win { left: 20%; top: 14%; width: 52%; height: 72%; transform: translateZ(60px); display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; }
+.ui-log { left: 80%; top: 20%; width: 34%; height: 58%; transform: translateZ(-60px); padding: 2.2cqw 2.4cqw; display: grid; align-content: start; gap: 1.1cqw; font-size: 1.9cqw; }
+.ui-log-h { font-weight: 800; font-size: 2.2cqw; margin-bottom: .6cqw; }
+.ui-row { display: flex; justify-content: space-between; gap: 1cqw; padding: .9cqw 1.1cqw; border-radius: .8cqw; background: #F1F2F4; }
+.ui-row b { font-weight: 500; color: #6A717C; }
+.ui-row.done span::before { content: "✓ "; color: #1F8A4C; font-weight: 800; }
+.ui-bar { display: flex; align-items: center; gap: .7cqw; padding: 1.2cqw 1.6cqw; border-bottom: 1px solid #ECEDEF; font-size: 1.7cqw; font-weight: 700; }
+.ui-bar i { width: 1.05cqw; height: 1.05cqw; border-radius: 50%; background: #E3E4E7; }
+.ui-bar i:nth-child(1) { background: #FF5F57; } .ui-bar i:nth-child(2) { background: #FEBC2E; } .ui-bar i:nth-child(3) { background: #28C840; }
+.ui-bar span { margin-inline-start: auto; }
+.ui-chat { display: flex; flex-direction: column; justify-content: flex-end; gap: 1.1cqw; padding: 1.6cqw; font-size: 1.75cqw; line-height: 1.75; }
+.ui-msg { max-width: 78%; padding: .9cqw 1.4cqw; border-radius: 1.6cqw; transform-origin: bottom left; }
+.ui-msg.mine { align-self: flex-start; background: #1B1B1B; color: #fff; border-end-start-radius: .4cqw; transform-origin: bottom right; }
+.ui-msg.theirs { align-self: flex-end; background: #EFF0F2; border-end-end-radius: .4cqw; }
+.ui-typing { align-self: flex-end; display: flex; gap: .5cqw; padding: 1.1cqw 1.4cqw; background: #EFF0F2; border-radius: 1.6cqw; }
+.ui-typing i { width: .8cqw; height: .8cqw; border-radius: 50%; background: #8B919A; }
+.ui-input { position: relative; display: flex; align-items: center; gap: 1cqw; margin: 0 1.4cqw 1.4cqw; padding: .7cqw .7cqw .7cqw 1.4cqw; border: 1px solid #E2E4E8; border-radius: 1.4cqw; font-size: 1.6cqw; color: #222; }
+.ui-input span { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ui-input button { font: 700 1.5cqw var(--fa); border: 0; border-radius: 1cqw; padding: .6cqw 1.3cqw; background: #1B1B1B; color: #fff; }
+.ui-input em { position: absolute; left: 3.9cqw; top: 50%; width: 3cqw; height: 3cqw; border-radius: 50%; background: rgba(27,27,27,.18); pointer-events: none; }
+.ui-cursor { position: absolute; width: 2.6cqw; height: 2.6cqw; transform-origin: 20% 10%; filter: drop-shadow(0 .3cqw .5cqw rgba(0,0,0,.25)); }

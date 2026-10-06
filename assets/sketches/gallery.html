@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>persian-motion-director · sketches</title>
+<link rel="stylesheet" href="./sketches.css">
+<style>
+  :root { --bg: #E9EBEF; --card: #FFFFFF; --fg: #101317; --muted: #5C6470; --line: #D6DAE0; --accent: #0000F2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0E1014; --card: #16191E; --fg: #E8EBF0; --muted: #98A0AC; --line: #272C34; --accent: #8DA0FF; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px clamp(16px, 4vw, 48px) 64px; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, sans-serif; }
+  header { max-width: 1320px; margin: 0 auto 24px; }
+  h1 { margin: 0 0 6px; font-size: clamp(26px, 4vw, 40px); letter-spacing: -0.02em; }
+  h1 .fa { font-family: "Vazirmatn", Tahoma, sans-serif; font-weight: 800; letter-spacing: 0; }
+  header p { margin: 0; color: var(--muted); max-width: 70ch; }
+  .grid { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 560px), 1fr)); gap: 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .head { display: flex; align-items: baseline; gap: 12px; padding: 12px 16px; }
+  .n { font: 600 13px ui-monospace, Menlo, monospace; color: var(--muted); }
+  .head h2 { margin: 0; font-size: 18px; flex: 1; }
+  .head .fa { font-family: "Vazirmatn", Tahoma, sans-serif; font-weight: 700; font-size: 17px; }
+  .stage { aspect-ratio: 16 / 9; width: 100%; }
+  .bar { display: flex; align-items: center; gap: 12px; padding: 9px 14px; border-top: 1px solid var(--line); font: 12px ui-monospace, Menlo, monospace; color: var(--muted); }
+  .play { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
+  .play[aria-pressed="true"]::before { content: "❚❚"; font-size: 10px; }
+  .play[aria-pressed="false"]::before { content: "▶"; font-size: 11px; }
+  .bar input { flex: 1; accent-color: var(--accent); }
+  .tc { color: var(--fg); min-width: 5ch; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="fa" dir="rtl" lang="fa">کارگردان موشن فارسی</span> · persian-motion-director</h1>
+  <p>The eight technique sketches, live. Each is a pure function of time: the same code renders frame by frame in Remotion. Press play or drag the bar. Serve this folder over HTTP (for example <code>python3 -m http.server</code>), since browsers block ES modules from file:// pages.</p>
+</header>
+<main class="grid" id="grid"></main>
+<script type="module">
+  import { SKETCHES, SKETCH_INFO } from './sketches.js';
+  import { Board } from './gallery.js';
+  const grid = document.getElementById('grid');
+  await document.fonts.load('800 1em Vazirmatn');
+  for (const info of SKETCH_INFO) {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="head"><span class="n">${String(info.n).padStart(2, '0')}</span><h2>${info.title}</h2><span class="fa" dir="rtl" lang="fa">${info.fa}</span></div>
+      <div class="stage pmd-stage"></div>
+      <div class="bar"><button class="play" type="button" aria-label="Play or pause"></button><input type="range" min="0" max="1" step="0.0005" value="0" aria-label="Scrub ${info.title}"><span class="tc">00:00</span><span>${info.id}</span></div>`;
+    grid.appendChild(card);
+    Board.add(card, SKETCHES[info.id]());
+  }
+</script>
+</body>
+</html>

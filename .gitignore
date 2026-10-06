@@ -1,0 +1,10 @@
+node_modules/
+out/
+dist/
+build/
+.DS_Store
+*.log
+__pycache__/
+.venv/
+venv/
+*.wav

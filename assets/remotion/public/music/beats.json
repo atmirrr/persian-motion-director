@@ -1,0 +1,80 @@
+{
+ "bpm": 120,
+ "beat_s": 0.5,
+ "bar_s": 2.0,
+ "bars": 41,
+ "duration_s": 82.0,
+ "sections": [
+  {
+   "name": "intro",
+   "from_bar": 1,
+   "to_bar": 3,
+   "start_s": 0.0,
+   "end_s": 4.0
+  },
+  {
+   "name": "build",
+   "from_bar": 3,
+   "to_bar": 5,
+   "start_s": 4.0,
+   "end_s": 8.0
+  },
+  {
+   "name": "drop",
+   "from_bar": 5,
+   "to_bar": 9,
+   "start_s": 8.0,
+   "end_s": 16.0
+  },
+  {
+   "name": "techniques",
+   "from_bar": 9,
+   "to_bar": 25,
+   "start_s": 16.0,
+   "end_s": 48.0
+  },
+  {
+   "name": "breakdown",
+   "from_bar": 25,
+   "to_bar": 29,
+   "start_s": 48.0,
+   "end_s": 56.0
+  },
+  {
+   "name": "drop2",
+   "from_bar": 29,
+   "to_bar": 37,
+   "start_s": 56.0,
+   "end_s": 72.0
+  },
+  {
+   "name": "outro",
+   "from_bar": 37,
+   "to_bar": 40,
+   "start_s": 72.0,
+   "end_s": 78.0
+  },
+  {
+   "name": "hit",
+   "from_bar": 40,
+   "to_bar": 41,
+   "start_s": 78.0,
+   "end_s": 80.0
+  }
+ ],
+ "whoosh_bars": [
+  9,
+  11,
+  13,
+  15,
+  17,
+  19,
+  21,
+  23,
+  25,
+  29,
+  33,
+  37
+ ],
+ "scale": "Shur on D: D, E-koron, F, G, A, Bb, C"
+}

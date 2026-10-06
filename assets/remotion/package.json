@@ -1,0 +1,23 @@
+{
+  "name": "persian-motion-director-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Renders the persian-motion-director sketches and the intro film with Remotion",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:clips": "node render-clips.mjs",
+    "render:intro": "remotion render src/index.ts Intro out/persian-motion-director-intro.mp4"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.530",
+    "@remotion/cli": "4.0.530",
+    "@remotion/renderer": "4.0.530",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.530"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "typescript": "5.9.2"
+  }
+}
