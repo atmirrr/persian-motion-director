@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="media/banner.png" alt="کارگردان موشن فارسی · persian-motion-director · free and open source" width="100%">
-
 # persian-motion-director
 
 **A Claude skill for professional motion design with correct Persian typography.**<br>
